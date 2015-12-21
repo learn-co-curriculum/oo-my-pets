@@ -36,7 +36,7 @@ describe Owner do
       end
 
       it "can't change its species" do 
-        expect { owner.species = "hamster" }.to raise_error
+        expect { owner.species = "hamster" }.to raise_error(NoMethodError)
       end
     end
 
